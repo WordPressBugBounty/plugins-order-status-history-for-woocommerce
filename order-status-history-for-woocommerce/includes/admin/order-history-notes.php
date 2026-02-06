@@ -59,7 +59,7 @@ $st_aggregated = count( $orders );
 <div id="post-body-content">
 
 <!-- Notice -->
-<div class="notice"><p>
+<div class="oshwoo-notice"><p>
 <?php if( $customer_id ): # search Customer in Users page ?>
 
 <a href="<?php echo esc_url( add_query_arg( array('s' => urlencode($customer_email)), site_url('/wp-admin/users.php') ) ) ?>"><?php

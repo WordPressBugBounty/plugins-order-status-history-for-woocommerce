@@ -57,11 +57,11 @@ const HX_HISTORY    = '#999999';
  *   
 **/
 # namespace\FILE defined in main plugin file
-define( NS.'\\PLUGIN_FILE', plugin_basename( namespace\FILE ) );             # path to plugin file relative to the plugins directory    
-define( NS.'\\VERSION',     get_plugin_data( namespace\FILE )['Version'] );  # Current plugin version
-define( NS.'\\NAME',        get_plugin_data( namespace\FILE )['Name'] );     # Plugin name as defined in the main plugin file
-define( NS.'\\DIR',         plugin_dir_path( namespace\FILE ) );             # Root plugin path (get up dir ref as this file is in a subdir)
-define( NS.'\\URL',         plugin_dir_url ( namespace\FILE ) );             # Root plugin URL
+define( NS.'\\PLUGIN_FILE', plugin_basename( namespace\FILE ) );                         # path to plugin file relative to the plugins directory    
+define( NS.'\\VERSION',     get_plugin_data( namespace\FILE, true, false )['Version'] ); # Current plugin version
+define( NS.'\\NAME',        get_plugin_data( namespace\FILE, true, false )['Name'] );    # Plugin name as defined in the main plugin file
+define( NS.'\\DIR',         plugin_dir_path( namespace\FILE ) );                         # Root plugin path (get up dir ref as this file is in a subdir)
+define( NS.'\\URL',         plugin_dir_url ( namespace\FILE ) );                         # Root plugin URL
 
 //error_log( var_export(namespace\FILE, true ) );
 

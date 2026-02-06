@@ -4,11 +4,11 @@
  * Plugin Name:          Order Status History for WooCommerce
  * Plugin URI:           https://wordpress.org/plugins/order-status-history-for-woocommerce
  * Description:          WooCommerce plugin for Order Status History and Reports 
- * Version:              2.0
+ * Version:              2.0.2
  * Requires PHP:         7.0
  * Requires at least:    5.0
  * WC requires at least: 3.2
- * WC tested up to:      8.5.2
+ * WC tested up to:      10.4.3
  * Text Domain:          order-status-history-for-woocommerce
  * Domain Path:          /languages
  * Author:               alx359

@@ -446,7 +446,7 @@ class osh {
             $st_aggregated = count( $orders );
 
             # for Orders history sorting in Users table, set aggregated totals into wp_usermeta for each User metadata 
-            # note: bust_cache status may change from within get_orders_cache
+            # note: busted_cache status may change from within get_orders_cache
             if( $busted_cache ) update_user_meta( $user_id, 'oshwoo_aggregated', $st_aggregated );
             
             # WC statuses counters init

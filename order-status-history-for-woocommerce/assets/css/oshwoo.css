@@ -3,6 +3,18 @@
  *
  */
 
+/* customer name display in order history pages  
+(can't use WP notices as other plugins like Booster may suppress them) */
+.oshwoo-notice {
+  margin: 1em 0;
+  padding: 12px;
+  background: #fff;
+  border-left: 4px solid #72aee6;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+.oshwoo-notice p {
+  margin: 0;
+}
 /* swatch render */
 .oshwoo.swatch {
   /* roundness */

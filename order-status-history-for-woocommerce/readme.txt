@@ -1,12 +1,12 @@
 === Order Status History for WooCommerce ===
 
 Contributors: alx359
-Donate link: https://paypal.me/alx359
+Donate link: https://www.paypal.com/donate/?hosted_button_id=Z44PBY7ARUPRY
 Tags: woocommerce history, past orders, woocommerce order history, woocommerce orders, order status 
-Tested up to: 6.4.2
+Tested up to: 6.9
 Requires at least: 5.0
 Requires PHP: 7.0
-Stable tag: 2.0
+Stable tag: 2.0.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -69,13 +69,17 @@ There's no 'Pro' version, nor a planned one. Everything works with no limitation
 
 = Is this plugin supported? =
 
-Yes, it's supported in the WP forums, when time permits.
+No further features are planned at this time, but we will make the effort to address bugs and incompatibilities when time permits. Hit the Support section for common usage questions.
 
-= Acknowledgments =
-
-Wish to thank the *Woocommerce Customers Order History* plugin for becoming a motivational point to write this one from the ground up, with the hope of offering a better alternative in various aspects that felt lacking, according to this author.
 
 == Changelog ==
+
+= 2.0.2 - 2026-01-06 =
+* FIX: Customer info in Product and Notes History pages was getting supressed by some plugins (e.g. Booster)
+* FIX: "Function _load_textdomain_just_in_time was called incorrectly" warning with latest php
+
+= 2.0.1 - 2025-12-31 =
+* Tested compatibility with latest versions of WP and Woo
 
 = 2.0 - 2024-01-28 =
 * NEW: finally, compatibility with HPOS (Major codebase refactoring. Consider this version as still in Beta, so please report of any issues)
@@ -85,7 +89,7 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 = 1.8.6.2 - 2022-08-13 =
 * FIX: Customer Products History has tweaked component support to properly handle some edge cases that may produce fatal errors
 * FIX: the donation notice box wasn't showing up. Thanks alex28
-* Check compatibility with latest WP and WC
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.8.6.1 - 2022-02-26 =
 * FIX: with the cached queries code forgot to properly tweak the case of orders entered manually with still incomplete information (thanks joshgem)
@@ -111,7 +115,7 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 = 1.8 - 2022-02-22 =
 * NEW: transient-level cache implementation for all history-gathering queries. *Massive* speed gains. Recommended update
 * TWEAK: PHP Notice in 1.7.5.x got an effective fix this time (thanks KoolPal)
-* Tested compatibility to latest versions of WP and WC
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.7.5.1 - 2021-11-13 =
 * TWEAK: revise the code once again to address the PHP Notice in 1.7.5 (thanks KoolPal)
@@ -122,7 +126,7 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 = 1.7.4 - 2021-10-30 =
 * PHP8 compatibility
 * FIX: typo in order-history-notes.php that gives fatal error in PHP8
-* Tested compatibility to latest versions of WP and WC
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.7.3 - 2021-10-27 =
 * TWEAK: add an extra style to status buttons to make them easier to hide via CSS (thanks supervreni)
@@ -150,7 +154,7 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 
 = 1.6.2 - 2021-08-21 =
 * TWEAK: hard-assign the scope of a number of WP core functions, to address a fatal error happening in some specific configurations (thanks mayboroda) 
-* Tested compatibility to latest versions of WP and WC
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.6.1 - 2021-07-16 =
 * FIX: CSV Notes Exporter bug
@@ -168,11 +172,11 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 
 = 1.5.4 - 2021-07-08 =
 * TWEAK: Include the Shop manager role as user of the plugin
-* Tested compatibility to latest versions of WP and WC
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.5.3 - 2021-04-27 =
 * TWEAK: No more redirecting to the 'settings' page upon plugin activation, as some users may find it confusing or annoying 
-* Tested compatibility to latest versions of WP and WC
+* Tested compatibility with latest versions of WP and Woo
 * i18n adjustments
 
 = 1.5.2 - 2021-04-02 =
@@ -180,7 +184,7 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 
 = 1.5.1 - 2021-03-29 =
 * FIX: a stronger object check to handle a reported issue with order-history-product.php (thanks buddsg)
-* Tested compatibility to latest versions of WP and WC
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.5 - 2021-02-08 =
 * NEW: Partial support for custom (non-core) statuses. A new status 'other' has been added, which consolidates in a single color swatch all those custom WC statuses configured by other plugins that an Order may traverse. (Please re-save your theme from the WooCommerce > Status History Settings page)
@@ -190,7 +194,7 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 
 = 1.4.2 - 2021-02-06 =
 * FIX: Non-core WC statuses aren't yet supported, but now are handled in a way to avoid PHP warnings and other errors
-* Tested compatibility to latest versions of WP and WC  
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.4.1 - 2020-06-11 =
 * FIX: 'postboxes' undefined error (JS) that may happen in some configurations 
@@ -199,7 +203,7 @@ Wish to thank the *Woocommerce Customers Order History* plugin for becoming a mo
 * FIX: global vs local post object issue, which may affect other plugins in the loop of the Orders page
 * FIX: issue with admin page call with passed order_id param not being that of an order
 * FIX: pass by reference not allowed 
-* Tested compatibility to latest versions of WP and WC
+* Tested compatibility with latest versions of WP and Woo
 
 = 1.3.6.1 - 2020-04-26 =
 * FIX: Crash, because some files didn't get committed. Sorry!
